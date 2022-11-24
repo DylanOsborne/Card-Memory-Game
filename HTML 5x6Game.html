@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="CSS 5x6Game.css">
+        <link rel="stylesheet" href="CSS General.css">
+        
+        <title>Card Memory Game</title>
+
+    </head>
+
+    <body onload="LoadGame()">
+
+        <div id="boardType" value="30"></div>
+
+        <div class="game_container">
+
+            <div class="game" id="game_board">
+
+                <div class="game_front">
+
+                    <div class="card_container">    
+                
+                        <div class="card" id="c1" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c1b"></div> 
+                            
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">    
+                        
+                        <div class="card" id="c2" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c2b"></div>
+        
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">    
+                        
+                        <div class="card" id="c3" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c3b"></div>
+        
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">    
+                        
+                        <div class="card" id="c4" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c4b"></div>
+        
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">    
+                        
+                        <div class="card" id="c5" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c5b"></div>
+                            
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">    
+                        
+                        <div class="card" id="c6" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c6b"></div>
+        
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">    
+                        
+                        <div class="card" id="c7" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c7b"></div>
+        
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">    
+                        
+                        <div class="card" id="c8" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c8b"></div>
+        
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">    
+                        
+                        <div class="card" id="c9" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c9b"></div>
+                            
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">    
+                        
+                        <div class="card" id="c10" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c10b"></div>
+        
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">    
+                        
+                        <div class="card" id="c11" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c11b"></div>
+        
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">    
+                        
+                        <div class="card" id="c12" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c12b"></div>
+        
+                        </div>
+        
+                    </div>
+        
+                    <div class="card_container">    
+                        
+                        <div class="card" id="c13" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c13b"></div>
+        
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">    
+                        
+                        <div class="card" id="c14" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c14b"></div>
+        
+                        </div>
+        
+                    </div>
+        
+                    <div class="card_container">    
+                        
+                        <div class="card" id="c15" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c15b"></div>
+                            
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">    
+                        
+                        <div class="card" id="c16" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c16b"></div>
+                            
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">    
+                        
+                        <div class="card" id="c17" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c17b"></div>
+                            
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">    
+                        
+                        <div class="card" id="c18" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c18b"></div>
+        
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">    
+                        
+                        <div class="card" id="c19" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c19b"></div>
+        
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">    
+                        
+                        <div class="card" id="c20" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c20b"></div>
+        
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">  
+        
+                        <div class="card" id="c21" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c21b"></div>
+        
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">  
+        
+                        <div class="card" id="c22" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c22b"></div>
+        
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">  
+        
+                        <div class="card" id="c23" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c23b"></div>
+        
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">  
+        
+                        <div class="card" id="c24" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c24b"></div>
+        
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">  
+        
+                        <div class="card" id="c25" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c25b"></div>
+                            
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">  
+        
+                        <div class="card" id="c26" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c26b"></div>
+        
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">  
+        
+                        <div class="card" id="c27" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c27b"></div>
+                            
+                        </div>
+        
+                    </div>
+        
+                    <div class="card_container">  
+        
+                        <div class="card" id="c28" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c28b"></div>
+        
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="card_container">  
+        
+                        <div class="card" id="c29" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c29b"></div>
+        
+                        </div>
+        
+                    </div>
+        
+                    <div class="card_container">  
+        
+                        <div class="card" id="c30" value="" onclick="CardOnClick(this)" aria-disabled="false">
+                            
+                            <div class="card_front"></div>
+        
+                            <div class="card_back" id="c30b"></div>
+        
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="game_back">
+
+                    <div class="winning_screen" id="winning_screen1">
+
+                        <div class="winning_screen" id="winning_screen2">
+
+                            <div class="winning_screen" id="winning_screen3">
+
+                                <div class="winning_screen" id="winning_screen4">
+
+                                    <p id="winning_text"></p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            
+            </div>
+
+        </div>
+
+
+        <div class="bottom_tab">
+
+            <div class="bottom_tab_buttons">
+
+                <button class="buttons" onclick="BackToRules()" id="back_button">Back</button>
+                <button class="buttons" onclick="GenerateBoard()" id="start_game">Start Game</button>
+                <button class="buttons" onclick="NewGame()" id="new_game">New Game</button>
+
+            </div>
+            
+
+            <div class="bottom_tab_text">
+
+                <p class="text" id="time_text">Time: 
+                    <p class="scores"> <span id="minutes"></span> : <span id="seconds"></span> </p> 
+                </p>
+                
+                
+
+                <p class="text" id="score_text">Score: 
+                    <p class="scores" id="score" value="0"></p>
+                </p>
+                
+
+                <p class="text" id="cards_text">Cards Left: 
+                    <p class="scores" id="cards_left" value="30"></p> 
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <script src="JS General.js"></script>
+
+    </body>
+
+</html>

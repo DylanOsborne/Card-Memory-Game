@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {  
+    background-image: linear-gradient(orange, purple, blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; 
+    width: 100%;
+    margin: auto;
+}
+
+#boardType {
+    height: 0%; 
+    width: 0%;
+}
+
+.bottom_tab {
+    border: 5px solid white;
+    height: 22%;
+    margin: 1%;
+    background-image: linear-gradient(blue, purple, orange);
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+
+.bottom_tab_text, .bottom_tab_buttons {
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.buttons {
+    color: white;
+    height: 100%;
+    width: 30%;
+    font-size: 24px;
+    background: none;
+    border: 2px solid white;
+    border-bottom: none;
+    border-top: none;
+    font-weight: bold;
+}
+
+
+#new_game {
+    border-right: 4px solid white;
+}
+
+
+#back_button {
+    border-left: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+#back_button, #new_game, #start_game {
+    background-image: linear-gradient(blue, purple, orange)
+}
+
+
+.buttons:hover {
+    cursor: pointer;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.text {
+    border: 2px solid white;
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+}
+
+
+.scores, #time_text, #score_text, #cards_text {
+    float: left;
+}
+
+
+#time_text {
+    border-left: 4px solid white;
+}
+
+
+#cards_left {
+    border-right: none;
+}
+
+
+.text, .scores {
+    font-size: 30px;
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding-top: 8.5%;
+}
+
+
+.scores {
+    width: 80%;
+    border: 2px solid white;
+    border-left: none;
+    border-bottom: none;
+    border-top: none;
+}
+
+
+@media only screen and (max-width: 1600px) {
+    .text, .scores {
+        font-size: 27px;
+    }
+
+    .buttons {
+        font-size: 22px;
+    }
+}
+
+
+.game_container {
+    perspective: 1800px;
+    width: 80%;
+    height: 66%;
+    color: white;
+    position: relative;
+}
+
+
+.game {
+    width: 100%;
+    height: 100%;
+    border: 5px solid black;
+    border-radius: 15px;
+    margin-top: 1%;
+    margin-left: 12%;
+    background-image: linear-gradient(blue, purple, orange);
+    transition: transform 1.7s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+.game_front, .game_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+
+.game_back {
+    transform: rotateY(180deg);
+}
+
+
+.FlipGame {
+    transform: rotateY(180deg);
+}
+
+
+.card_container {
+    perspective: 1000px;
+    color: white;
+    position: relative;
+}
+
+
+.card {
+    opacity: 0;
+    background: black;
+    border-radius: 7px;
+    border: 4px solid white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.7s, opacity 1.5s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+.card_front, .card_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+
+.card_back {
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotateY(180deg);
+}
+
+
+.FlipCard {
+    transform: rotateY(180deg);
+}
+
+
+
+.winning_screen {
+    background-image: linear-gradient(blue, purple, orange);
+    color: white;
+    border: 5px solid white;
+    font-size: 120px;
+    text-align: center;
+    border-radius: 9px;
+}
+
+#winning_text {
+    margin-top: 9%;
+}
+
+#winning_screen1 {
+    width: 100%;
+    height: 100%;
+}
+
+#winning_screen2 {
+    width: 90%;
+    height: 90%;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+#winning_screen3 {
+    width: 80%;
+    height: 80%;
+    margin-top: 4%;
+    margin-left: 10%;
+}
+
+#winning_screen4 {
+    width: 70%;
+    height: 70%;
+    margin-top: 6%;
+    margin-left: 15%;
+}
+
+

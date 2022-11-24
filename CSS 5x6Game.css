@@ -1,0 +1,27 @@
+body, html {
+    height: 99.2% !important;
+}
+
+.card_container {
+    float: left;
+    margin: 1% 0 0 1%;
+    width: 15.3%;
+    height: 16.7%;
+    font-size: 90px;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    
+}
+
+.card_back {
+    background-size: 100px;
+}
+
+@media only screen and (max-width: 1600px) {
+    .card_back {
+        background-size: 80px;
+    }
+}
