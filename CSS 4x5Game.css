@@ -23,4 +23,8 @@ body, html {
     .card_back {
         background-size: 105px;
     }
+    
+    .card_container {
+        font-size: 90px;
+    }
 }
