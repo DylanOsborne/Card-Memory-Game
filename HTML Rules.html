@@ -13,39 +13,48 @@
 
     <body onload="SetRules()">
 
+        <div id="add_placement"></div>
+
         <div class="rules_container">
 
             <div class="rules">
 
-                <div class="welcome">
+                <div id="heading">
 
-                    <h2>Welcome to the rules</h2>
+                    <h2 id="game_mode_rules_header"></h2>
+
+                </div>
+
+                <div id="welcome">
+
+                    <h3>Rules</h3>
                     <ul class="rules_list">
                         <li id="list_item_1"></li>
                         <li id="list_item_2"></li>
                         <li id="list_item_3"></li>
                         <li id="list_item_4"></li>
-                        <li id="list_item_5"></li>
-                        <li id="list_item_6"></li>
-                        <li id="list_item_7"></li>
                     </ul>
 
                 </div>
                 
                 <div class="radio_buttons">
                     
+                    <h3>Please Select</h3>
+
                     <div class="radio_buttons_text">
-                        <input id="numbers_radio" type="radio" onclick="selectGameType(this)" name="radio_button">Numbers
+                        <input id="numbers_radio" type="radio" onclick="selectGameType(this)" name="radio_button" checked>Numbers
                         <input id="pictures_radio" type="radio" onclick="selectGameType(this)" name="radio_button">Emoji's
                         <input id="colors_radio" type="radio" onclick="selectGameType(this)" name="radio_button">Colors
                     </div>
                     
                 </div>
 
-                <a href="HTML 3x4Game.html"><button>Click To Play 3x4 Game</button></a>
-                <a href="HTML 4x5Game.html"><button>Click To Play 4x5 Game</button></a>
-                <a href="HTML 5x6Game.html"><button>Click To Play 5x6 Game</button></a>
-                <a href="HTML Select Game Mode.html"><button id="rules_back_button">Back</button></a>
+                <h3 id="board_size_text">Board Size</h3>
+
+                <button onclick="RedirectTo3x4()">3x4</button>
+                <button onclick="RedirectTo4x5()">4x5</button>
+                <button onclick="RedirectTo5x6()">5x6</button>
+                <button id="rules_back_button" onclick="RedirectToSelectGameMode()">Back</button>
 
             </div>
 
