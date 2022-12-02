@@ -1,18 +1,9 @@
-body, html {
-    height: 99.2% !important;
-}
-
 .card_container {
     float: left;
     margin: 1% 0 0 1%;
     width: 18.8%;
     height: 21.5%;
     font-size: 110px;
-}
-
-.card {
-    height: 100%;
-    width: 100%;
 }
 
 .card_back {
@@ -23,8 +14,8 @@ body, html {
     .card_back {
         background-size: 105px;
     }
-    
+
     .card_container {
-        font-size: 80px;
+        font-size: 90px;
     }
 }
