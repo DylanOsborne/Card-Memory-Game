@@ -211,9 +211,9 @@ function LoadGame() {
             winAmountTimed3x4 = sessionStorage.getItem('winAmountTimed3x4');
 
             if(winAmountTimed3x4 == null) {
-                winAmount.innerHTML = "Games Completed: 0";
+                winAmountHTML.innerHTML = "Games Completed: 0";
             } else {
-                winAmount.innerHTML = "Games Completed: " + winAmountTimed3x4;
+                winAmountHTML.innerHTML = "Games Completed: " + winAmountTimed3x4;
             }
 
         
