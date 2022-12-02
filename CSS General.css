@@ -215,6 +215,8 @@ button:hover {
     height: 100%;
     width: 9%;
     float: left;
+    text-align: center;
+    margin-top: 50%;
 }
 
 #score_placement {
