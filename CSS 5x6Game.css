@@ -1,0 +1,22 @@
+.card_container {
+    float: left;
+    margin: 1% 0 0 1%;
+    width: 15.5%;
+    height: 16.7%;
+    font-size: 90px;
+}
+
+.card_back {
+    background-size: 100px;
+}
+
+@media only screen and (max-width: 1600px) {
+    .card_back {
+        background-size: 80px;
+    }
+
+    .card_container {
+        font-size: 70px;
+    }
+    
+}
