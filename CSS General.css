@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+
 html, body {  
     background-image: linear-gradient(orange, purple, blue);
     background-repeat: no-repeat;
@@ -11,19 +12,40 @@ html, body {
     margin: auto;
 }
 
-#boardType {
-    height: 0%; 
-    width: 0%;
+
+h1:hover, h2:hover, h3:hover, p:hover, li:hover, .radio_buttons_text:hover {
+    cursor: default;
 }
+
+li {
+    font-size: 22px;
+}
+
+
+button {
+    background-color: black;
+    border: 3px solid white;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 15px;
+}
+
+
+button:hover {
+    cursor: pointer;
+}
+
 
 .bottom_tab {
     border: 5px solid white;
     height: 22%;
     margin: 1%;
+    margin-left: 9.7%;
     background-image: linear-gradient(blue, purple, orange);
     color: white;
     font-weight: bold;
     border-radius: 15px;
+    width: 75%;
 }
 
 
@@ -39,83 +61,30 @@ html, body {
 
 .buttons {
     color: white;
-    height: 100%;
+    height: 80%;
     width: 30%;
-    font-size: 24px;
-    background: none;
-    border: 2px solid white;
-    border-bottom: none;
-    border-top: none;
-    font-weight: bold;
-}
-
-
-#new_game {
-    border-right: 4px solid white;
-}
-
-
-#back_button {
-    border-left: none;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-
-#back_button, #new_game, #start_game {
-    background-image: linear-gradient(blue, purple, orange)
-}
-
-
-.buttons:hover {
-    cursor: pointer;
-}
-
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-
-.text {
-    border: 2px solid white;
-    border-right: none;
-    border-bottom: none;
-    border-top: none;
-}
-
-
-.scores, #time_text, #score_text, #cards_text {
-    float: left;
-}
-
-
-#time_text {
-    border-left: 4px solid white;
-}
-
-
-#cards_left {
-    border-right: none;
-}
-
-
-.text, .scores {
     font-size: 30px;
-    height: 100%;
-    width: 100%;
-    margin: 0%;
-    padding-top: 8.5%;
+    background: black;
+    border: 4px solid white;
+    font-weight: bold;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 2.6%;
 }
 
 
-.scores {
-    width: 80%;
-    border: 2px solid white;
-    border-left: none;
-    border-bottom: none;
-    border-top: none;
+#game_button {
+    width: 70%;
+}
+
+
+#bottom_tab_display {
+    background: black;
+    border: 4px solid white;
+    width: 60%;
+    margin-left: 20%;
+    font-size: 40px;
+    padding-top: 4%;
 }
 
 
@@ -132,10 +101,12 @@ a {
 
 .game_container {
     perspective: 1800px;
-    width: 80%;
+    width: 84.7%;
     height: 66%;
     color: white;
     position: relative;
+    padding-top: 0.5%;
+    padding-left: 9.7%;
 }
 
 
@@ -144,8 +115,6 @@ a {
     height: 100%;
     border: 5px solid black;
     border-radius: 15px;
-    margin-top: 1%;
-    margin-left: 12%;
     background-image: linear-gradient(blue, purple, orange);
     transition: transform 1.7s;
     transform-style: preserve-3d;
@@ -217,13 +186,13 @@ a {
     background-image: linear-gradient(blue, purple, orange);
     color: white;
     border: 5px solid white;
-    font-size: 120px;
+    font-size: 100px;
     text-align: center;
     border-radius: 9px;
 }
 
 #winning_text {
-    margin-top: 9%;
+    margin-top: 15%;
 }
 
 #winning_screen1 {
@@ -232,24 +201,51 @@ a {
 }
 
 #winning_screen2 {
-    width: 90%;
-    height: 90%;
-    margin-top: 2%;
-    margin-left: 5%;
-}
-
-#winning_screen3 {
     width: 80%;
     height: 80%;
     margin-top: 4%;
     margin-left: 10%;
-}
-
-#winning_screen4 {
-    width: 70%;
-    height: 70%;
-    margin-top: 6%;
-    margin-left: 15%;
+    background: black;
 }
 
 
+#add_placement {
+    background: white;
+    opacity: 0.3;
+    height: 100%;
+    width: 9%;
+    float: left;
+}
+
+#score_placement {
+    height: 100%;
+    width: 14%;
+    float: right;
+    padding-top: 0.5%;
+}
+
+#score_block {
+    background-color: black;
+    height: 60%;
+    width: 100%;
+    border: 3px solid white;
+    color: white;
+    text-align: center;
+}
+
+#score_placement_add_placement {
+    background: white;
+    opacity: 0.3;
+    height: 40%;
+    width: 100%;
+    float: none;
+}
+
+#scores_list {
+    font-size: 26px;
+}
+
+ol {
+    padding-inline-start: 0px;
+    cursor: default;
+}
