@@ -13,16 +13,18 @@
 
     <body>
 
+        <div id="add_placement"></div>
+
         <div class="game_mode_selection_container">
 
             <div class="game_mode_selection">
 
-                <h2>Please Select A Game Mode</h2>
+                <p>Select Mode</p>
 
-                <a href="HTML Rules.html"><button id="timed_mode" onclick="selectGameMode(this)">Timed Mode</button></a>
-                <a href="HTML Rules.html"><button id="memory_mode" onclick="selectGameMode(this)">Memory Mode</button></a>
-                <a href="HTML Rules.html"><button id="standard_mode" onclick="selectGameMode(this)">Standard Mode</button></a>
-                <a href="index.html"><button id="game_mode_back_button">Back</button></a>
+                <button id="timed_mode" onclick="selectGameMode(this), RedirectToRules()">Timed</button>
+                <button id="memory_mode" onclick="selectGameMode(this), RedirectToRules()">Memory</button>
+                <button id="standard_mode" onclick="selectGameMode(this), RedirectToRules()">Standard</button>
+                <button id="game_mode_back_button" onclick="BackToStartScreen()">Back</button>
 
             </div>
 
