@@ -241,6 +241,8 @@ button:hover {
     height: 40%;
     width: 100%;
     float: none;
+    padding-top: 70%;
+    text-align: center;
 }
 
 #scores_list {
