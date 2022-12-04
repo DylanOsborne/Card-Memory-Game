@@ -1295,6 +1295,10 @@ function ShowBoard() {
                     minutes = setTime(parseInt(sec/60,10)); //set minues to specified time
 
                     bottomTabDisplay.innerHTML = "Time Left: " + minutes + ":" + seconds //set bottom display to "TimeLeft"
+                    
+                    if(sec < 11) { //if sec is less than 11
+                        bottomTabDisplay.style.color = "red"; //set bottom display color to "red"
+                    }
         
                     if(sec == 0) { //if sec is 0
                         
