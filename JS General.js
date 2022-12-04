@@ -1189,7 +1189,9 @@ function CardOnClick(selectedCard) {
     
                 FlipCard(selectedCard); //flip the clicked on card face up
                 
-            } else if(totalCardsSelected == 2) { //if total cards that have already been clicked is 2
+            } 
+            
+            if(totalCardsSelected == 2) { //if total cards that have already been clicked is 2
     
                 gameActive == false;
         
