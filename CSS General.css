@@ -214,6 +214,16 @@ button:hover {
     padding-top: 25%;
 }
 
+#add_placement2 {
+    background: white;
+    opacity: 0.3;
+    height: 100%;
+    width: 14%;
+    float: right;
+    padding-top: 25%;
+    text-align: center;
+}
+
 #score_placement {
     height: 100%;
     width: 14%;
