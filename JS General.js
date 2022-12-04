@@ -1169,57 +1169,59 @@ function GenerateBoard() {
 //function for when a card is clicked on
 function CardOnClick(selectedCard) {
 
-    if(selectedCard.getAttribute("value") != -1 && gameActive == true) { //if card is disabled and game is active
+    if(gameActive == true) { //if game is active
 
-        if(totalCardsSelected == 0) { //if total cards that have already been clicked is 0
+        if(selectedCard.getAttribute("value") != -1) { //if card is disabled 
 
-            cardOne = selectedCard; //set card one to the card clicked on
-            cardOneValue = selectedCard.getAttribute('value'); //set cardOneValue to the card clicked on's value
-            totalCardsSelected++; //increase total cards selected
-
-            FlipCard(selectedCard); //flip the clicked on card face up
-            
-        } else if(totalCardsSelected == 1 &&  selectedCard != cardOne) { //if total cards that have already been clicked is 1
+            if(totalCardsSelected == 0) { //if total cards that have already been clicked is 0
     
-            cardTwo = selectedCard; //set card two to the card clicked on
-            cardTwoValue = selectedCard.getAttribute('value'); //set cardTwoValue to the card clicked on's value
-            totalCardsSelected++; //increase total cards selected
-
-            FlipCard(selectedCard); //flip the clicked on card face up
-            
-        }
+                cardOne = selectedCard; //set card one to the card clicked on
+                cardOneValue = selectedCard.getAttribute('value'); //set cardOneValue to the card clicked on's value
+                totalCardsSelected++; //increase total cards selected
     
-        if(totalCardsSelected == 2) { //if total cards that have already been clicked is 2
-            
-            gameActive == false;
-    
-            if(AreCardsTheSame(cardOneValue, cardTwoValue)) { //if statement that calls on the AreCardsTheSame() function
-    
-                setTimeout(function() { RemoveCards(cardOne, cardTwo); }, 1200); //setTimeout function to call on the RemoveCards() function set on 1.5 seconds
+                FlipCard(selectedCard); //flip the clicked on card face up
+                
+            } else if(totalCardsSelected == 1 &&  selectedCard != cardOne) { //if total cards that have already been clicked is 1
         
-            } else { //if the cards are not the same
-
-                setTimeout(function() { //setTimeout function to flip card two cards selected face down
-                    
-                    FlipCard(cardOne);
-                    FlipCard(cardTwo);
-                    
-                }, 1200); //set time to 1.2 seconds
-
-                if(gameMode == "memory") { //game mode is memory game mode
-                    
-                    mismatches++ //increase mismatches by 1
-                    bottomTabDisplay.innerHTML = "Mismatches Made: " + mismatches; //set bottomTabDisplay to display mismatches made
+                cardTwo = selectedCard; //set card two to the card clicked on
+                cardTwoValue = selectedCard.getAttribute('value'); //set cardTwoValue to the card clicked on's value
+                totalCardsSelected++; //increase total cards selected
+    
+                FlipCard(selectedCard); //flip the clicked on card face up
+                
+            } else if(totalCardsSelected == 2) { //if total cards that have already been clicked is 2
+    
+                gameActive == false;
+        
+                if(AreCardsTheSame(cardOneValue, cardTwoValue)) { //if statement that calls on the AreCardsTheSame() function
+        
+                    setTimeout(function() { RemoveCards(cardOne, cardTwo); }, 1200); //setTimeout function to call on the RemoveCards() function set on 1.5 seconds
+            
+                } else { //if the cards are not the same
+    
+                    setTimeout(function() { //setTimeout function to flip card two cards selected face down
+                        
+                        FlipCard(cardOne);
+                        FlipCard(cardTwo);
+                        
+                    }, 1200); //set time to 1.2 seconds
+    
+                    if(gameMode == "memory") { //game mode is memory game mode
+                        
+                        mismatches++ //increase mismatches by 1
+                        bottomTabDisplay.innerHTML = "Mismatches Made: " + mismatches; //set bottomTabDisplay to display mismatches made
+                        
+                    }
+    
+                    setTimeout(function() { ResetCards(); }, 1250); //setTimeout function to call ResetCards() function after 1.5 seconds
                     
                 }
-
-                setTimeout(function() { ResetCards(); }, 1250); //setTimeout function to call ResetCards() function after 1.5 seconds
-                
+        
             }
     
-        }
+        } 
 
-    } 
+    }
     
 }
 
