@@ -1190,6 +1190,8 @@ function CardOnClick(selectedCard) {
         }
     
         if(totalCardsSelected == 2) { //if total cards that have already been clicked is 2
+            
+            gameActive == false;
     
             if(AreCardsTheSame(cardOneValue, cardTwoValue)) { //if statement that calls on the AreCardsTheSame() function
     
@@ -2338,6 +2340,8 @@ function RemoveCards() {
         }
 
     }
+    
+    gameActive == true; //set gameActive to true
 
 }
 
@@ -2458,6 +2462,8 @@ function ResetCards() {
     cardTwoValue = 0;
     
     totalCardsSelected = 0; //set totalCardsSelected to 0
+    
+    gameActive == true; //set gameActive to true
 }
 
 
