@@ -1145,8 +1145,6 @@ function GenerateBoard() {
     gameActive = true; //set gameActive to true
 
     if(gameMode == "memory") { //if game mode is memory game mode
-        
-        gameActive = false; //set gameActive to false;
 
         for(let i = 1; i <= boardValue; i++) { //for loop to iterate through evry card
 
@@ -1169,12 +1167,6 @@ function GenerateBoard() {
             }
             
         }, 5000); //setting the timeout time to 5 seconds
-
-        setTimeout(function() { //time out function
-
-            gameActive = true; //set gameActive to true
-            
-        }, 5500); //setting the timeout time to 5.5 seconds
         
     }
 
