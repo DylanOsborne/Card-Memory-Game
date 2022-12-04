@@ -1773,7 +1773,7 @@ function RemoveCards() {
             setTimeout(function() { FlipGame() }, 1500); //setTimout() function to call FlipGame() function after 1.5 seconds
             clearInterval(timer); //clearInterval on timer variable
             win = true; //set win to true
-            winngingText.innerHTML = "You Win"; //set winningText to "You Win"
+            winngingText.innerHTML = "Board Cleared"; //set winningText to "Board Cleared"
 
             if(boardValue == 12) {
 
