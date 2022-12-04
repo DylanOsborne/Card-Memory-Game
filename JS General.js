@@ -761,7 +761,7 @@ function SetRules() {
         rulesheader.innerHTML = "Timed Game"
 
         list_item_1.innerHTML = "Clear as many cards as possible before the time runs out";
-        list_item_2.innerHTML = "Every time you clear a board you get +10 seconds";
+        list_item_2.innerHTML = "Every time you clear a board you get extra time";
         list_item_3.innerHTML = "3 board sizes, each with different time limits";
         list_item_4.innerHTML = "Please Have FUN!!";
 
@@ -2460,7 +2460,13 @@ function resetBoard() {
     fourteens = 0;
     fifteens = 0;
 
-    sec = sec + 10;
+    if(boardValue == 12) {
+        sec = sec + 10; //add 10 seconds
+    } else if(boardValue == 20) {
+        sec = sec + 15; //add 15 seconds
+    } else if(boardValue == 30) {
+        sec = sec + 20; //add 20 seconds
+    }
 
     GenerateBoard(); //calling GenerateBoard() function
 
