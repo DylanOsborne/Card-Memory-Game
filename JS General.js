@@ -761,7 +761,7 @@ function SetRules() {
         rulesheader.innerHTML = "Timed Game"
 
         list_item_1.innerHTML = "Clear as many cards as possible before the time runs out";
-        list_item_2.innerHTML = "Every time you clear a board 10 seconds gets added to your time";
+        list_item_2.innerHTML = "Every time you clear a board you get +10 seconds";
         list_item_3.innerHTML = "3 board sizes, each with different time limits";
         list_item_4.innerHTML = "Please Have FUN!!";
 
