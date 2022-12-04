@@ -1169,7 +1169,7 @@ function GenerateBoard() {
 //function for when a card is clicked on
 function CardOnClick(selectedCard) {
 
-    if(gameActive == true) { //if game is active
+    if(gameActive == true && totalCardsSelected != 2) { //if game is active and total cards selected is not 2
 
         if(selectedCard.getAttribute("value") != -1) { //if card is disabled 
 
