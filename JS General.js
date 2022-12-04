@@ -1197,27 +1197,46 @@ function CardOnClick(selectedCard) {
         
                 if(AreCardsTheSame(cardOneValue, cardTwoValue)) { //if statement that calls on the AreCardsTheSame() function
         
-                    setTimeout(function() { RemoveCards(cardOne, cardTwo); }, 1200); //setTimeout function to call on the RemoveCards() function set on 1.5 seconds
+                    if(gameMode == "timed") {
+                        setTimeout(function() { RemoveCards(cardOne, cardTwo); }, 900); //setTimeout function to call on the RemoveCards() function set on 0.9 seconds
+                    } else {
+                        setTimeout(function() { RemoveCards(cardOne, cardTwo); }, 1200); //setTimeout function to call on the RemoveCards() function set on 1.2 seconds
+                    }
+
+                    
             
                 } else { //if the cards are not the same
-    
-                    setTimeout(function() { //setTimeout function to flip card two cards selected face down
-                        
-                        FlipCard(cardOne);
-                        FlipCard(cardTwo);
-                        
-                    }, 1200); //set time to 1.2 seconds
-    
+
                     if(gameMode == "memory") { //game mode is memory game mode
                         
                         mismatches++ //increase mismatches by 1
                         bottomTabDisplay.innerHTML = "Mismatches Made: " + mismatches; //set bottomTabDisplay to display mismatches made
                         
                     }
-    
-                    setTimeout(function() { ResetCards(); }, 1250); //setTimeout function to call ResetCards() function after 1.5 seconds
-                    
-                }
+
+                    if(gameMode == "timed") {
+
+                        setTimeout(function() { //setTimeout function to flip card two cards selected face down
+                        
+                            FlipCard(cardOne);
+                            FlipCard(cardTwo);
+                            
+                        }, 900); //set time to 0.9 seconds
+        
+                        setTimeout(function() { ResetCards(); }, 950); //setTimeout function to call ResetCards() function after 0.95 seconds
+
+                    } else {
+
+                        setTimeout(function() { //setTimeout function to flip card two cards selected face down
+                        
+                            FlipCard(cardOne);
+                            FlipCard(cardTwo);
+                            
+                        }, 1200); //set time to 1.2 seconds
+        
+                        setTimeout(function() { ResetCards(); }, 1250); //setTimeout function to call ResetCards() function after 1.25 seconds
+
+                    }
         
             }
     
