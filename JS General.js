@@ -29,7 +29,8 @@ var timer;
 var cardsLeft;
 var seconds;
 var minutes;
-var sec
+var sec;
+var firstMemoryFlip;
 
 var gameType = sessionStorage.getItem('gameType');
 var gameMode = sessionStorage.getItem('gameMode');
@@ -1170,9 +1171,11 @@ function GenerateBoard() {
     
     setTimeout(function() { //time out function
             
-        gameActive = true; //set gameActive to true
+        firstMemoryFlip = false;
         
-    }, 6000); //setting the timeout time to 5 seconds
+    }, 6000); //setting the timeout time to 6 seconds
+    
+    gameActive = true; //set gameActive to true
 
 }
 
@@ -1181,7 +1184,8 @@ function GenerateBoard() {
 //function for when a card is clicked on
 function CardOnClick(selectedCard) {
 
-    if(gameActive == true && totalCardsSelected != 2 && win != true) { //if game is active and total cards selected is not 2 and win is not true
+    //if game is active and total cards selected is not 2 and win is not true and firstMemoryFlip is not true
+    if(gameActive == true && totalCardsSelected != 2 && win != true && firstMemoryFlip != true) { 
 
         if(selectedCard.getAttribute("value") != -1) { //if card is disabled 
 
