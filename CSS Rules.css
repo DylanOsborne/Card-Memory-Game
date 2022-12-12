@@ -38,6 +38,7 @@
     border: 2px solid white;
     width: 90%;
     margin-left: 5%;
+    height: 25%;
 }
 
 
@@ -113,6 +114,10 @@ button {
 
     button {
         height: 16%;
+    }
+    
+    #welcome {
+        height: 30%;
     }
 
 }
