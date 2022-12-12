@@ -3,7 +3,7 @@
     margin: 1% 0 0 1%;
     width: 23.7%;
     height: 30%;
-    font-size: 130px;
+    font-size: 140px;
 }
 
 .card_back {
@@ -16,6 +16,6 @@
     }
 
     .card_container {
-        font-size: 130px;
+        font-size: 110px;
     }
 }
