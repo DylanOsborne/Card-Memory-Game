@@ -1145,6 +1145,8 @@ function GenerateBoard() {
 
     if(gameMode == "memory") { //if game mode is memory game mode
 
+        firstMemoryFlip = true;
+        
         for(let i = 1; i <= boardValue; i++) { //for loop to iterate through evry card
 
             //getting the card from the HTML
